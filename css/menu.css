@@ -1,0 +1,70 @@
+nav.tlo {
+    background-size: auto 50px;
+    background-image: url("/img/indeks.jpg");
+     background-attachment: fixed;
+  
+  background-origin: content-box; 
+}
+}
+
+nav.navbar .a {
+    color: #333;
+    text-decoration: none !important;
+}
+nav.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #f8f8f8;
+    width: 700px;
+    display: inline-block;
+}
+
+nav.navbar ul li {
+    display: block;
+    position: relative;
+    float: left;
+    background: #f8f8f8;
+}
+
+nav.navbar li ul { display: none; width: 150px;}
+
+nav.navbar ul li a {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #333;
+}
+
+nav.navbar ul li a:hover { background: #f8f8f8; }
+
+nav.navbar li:hover > ul {
+    display: block;
+    position: absolute;
+}
+
+nav.navbar li:hover li { float: none; }
+
+nav.navbar li:hover a { background: #f8f8f8; }
+
+nav.navbar li:hover li a:hover { background: #f8f8f8; }
+
+nav.navbar .main-navigation li ul li { border-top: 0; }
+
+nav.navbar ul ul ul {
+    left: 100%;
+    top: 0;
+}
+
+nav.navbar ul:before,
+nav.navbar ul:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+nav.navbar ul:after { clear: both; }
+
+ul.navbar-nav {
+    width: auto !important;
+}

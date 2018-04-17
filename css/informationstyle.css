@@ -1,0 +1,47 @@
+body
+{
+   height: 1900px;
+ 
+}
+
+h1
+{
+  font-size: 48px;
+  color: red;
+  position: relative;
+
+  left: 100px;
+  top: 150px;
+}
+
+div.parent {
+  box-sizing: border-box;
+  padding: 8px;
+  width: 100%;
+  background-color: red;
+   color: #fff;
+}
+.closebtn {
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.closebtn:hover {
+  color: #000;
+}
+
+div.square {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin: 10px;
+    float: left;
+    padding: 30px;
+    text-align: center;
+    background-color: lightgray;
+}
+
+p.square {
+    font-size: 8px;
+}

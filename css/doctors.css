@@ -1,0 +1,48 @@
+body
+{
+   height: 2100px;
+ 
+}
+
+p.small {
+    font-variant: small-caps;
+}
+
+p.serif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p:first-child {
+    background-color: yellow;
+}
+
+p:last-child {
+    background: rgba(255, 0, 0, 0.3);
+}
+
+p:nth-last-child(2) {
+    color: white;
+} 
+
+h1:only-child {
+    color: red;
+}
+
+h1
+{
+    border-style: solid ;
+    border-width: 5px ;
+    border-color: -moz-rgba(0, 0, 255, 0.3);
+    border-color: -webkit-rgba(0, 0, 255, 0.3);
+    border-color: rgba(0, 0, 255, 0.3);
+	font-size: 300%;
+	line-height: 200%;
+}
+
+#borderimg { 
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image-source: url(/img/border.png);    
+    border-image-slice: 30;
+}
+

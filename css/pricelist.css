@@ -1,0 +1,17 @@
+body
+{
+   height: 1500px;
+ 
+}
+
+table {
+   border: 1px solid blue;
+   padding: 5px;
+   background-color: #cce7ff;
+
+}
+
+:target {
+    border: 2px solid #D4D4D4;
+    background-color: #yellow;
+}

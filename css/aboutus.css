@@ -1,0 +1,127 @@
+body
+{
+   height: 2150px;
+ 
+}
+
+p.normal {
+    font-style: normal;
+    font-size: 2em;
+    
+}
+
+p.italic {
+    font-style: italic;
+
+}
+
+p.oblique {
+    font-style: oblique;
+    font-size: 18pt;
+}
+
+p.thick {
+    font-weight: bold;
+    font-size: 118%;
+}
+
+div {
+	
+	-webkit-border: 2px solid;
+	-moz-border: 2px solid;
+	border: 2px solid;
+    
+	-webkit-border-radius: 15px 50px 30px 5px;
+  	-moz-border-radius: 15px 50px 30px 5px;
+  	border-radius: 15px 50px 30px 5px;  
+    }
+
+    body{
+    	{
+  				background-color: grey;
+  				font-family: Verdana;
+  				font-size: 20px;
+  				color: white;
+			}
+
+			h1
+			{
+  			font-size: 48px;
+  			width: 22em;
+  			height: 70pt;
+  			color: red;
+			}
+			a:hover {
+    		color: red;
+    		}
+    		p:last-of-type {
+    		background: #ff0000;
+			}
+			:not(h1) {
+    			color: white;
+			}
+			p:nth-child(2) {
+    			color: yellow;
+			}
+    }
+
+    #borderimg1 { 
+    border: 15px solid transparent;
+    padding: 15px;
+    border-image-source: url(/img/border.png);
+    border-image-repeat: repeat;
+    border-image-slice: 30;
+}
+
+
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    background-color: lightgrey;
+}
+
+.flex-item {
+    background-color: cornflowerblue;
+    width: 25%;
+    height: 100px;
+    margin: 10px;
+}
+
+.flex-item:hover {
+    background-color: cornflowerblue;
+    width: 55%;
+    height: 100px;
+    margin: 10px;
+}
+
+@media (min-width: 1024px) {
+    .columns {
+        -webkit-column-count: 3; /* Chrome, Safari, Opera */
+        -moz-column-count: 3; /* Firefox */
+        column-count: 3;
+
+        -webkit-column-gap: 30px; /* Chrome, Safari, Opera */
+        -moz-column-gap: 30px; /* Firefox */
+        column-gap: 30px;
+
+        -webkit-column-rule: 4px outset #ff00ff; /* Chrome, Safari, Opera */
+    	-moz-column-rule: 4px outset #ff00ff; /* Firefox */
+    	column-rule: 4px outset #ff00ff;
+    }
+}
+@media (max-width: 1023px) {
+    .columns {
+        -webkit-column-count: 2; /* Chrome, Safari, Opera */
+        -moz-column-count: 2; /* Firefox */
+        column-count: 2;
+
+        -webkit-column-gap: 20px; /* Chrome, Safari, Opera */
+        -moz-column-gap: 20px; /* Firefox */
+        column-gap: 20px;
+
+        -webkit-column-rule: 4px outset #ff00ff; /* Chrome, Safari, Opera */
+    	-moz-column-rule: 4px outset #ff00ff; /* Firefox */
+    	column-rule: 4px outset #ff00ff;
+    }
+}

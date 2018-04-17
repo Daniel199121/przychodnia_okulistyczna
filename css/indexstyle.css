@@ -1,0 +1,89 @@
+body
+{
+  
+  height: 500px;
+}
+
+h1
+{
+  font-size: 48px;
+  color: red;
+  
+}
+
+
+#borderimg1 {
+    border: 5px solid transparent;
+    padding: 10px;
+    -webkit-border-image: url(/img/border.png) round; /* Safari 3.1-5 */
+    -o-border-image: url(/img/border.png) round; /* Opera 11-12.1 */
+    border-image: url(/img/border.png) round;
+    border-image-slice: 20%;
+}
+
+div.animation {
+   width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 40s; /* Safari 4.0 - 8.0 */
+    -moz-animation-name: example; /* Safari 4.0 - 8.0 */
+    -moz-animation-duration: 40s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 40s;
+    -ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+    -moz-transform: rotate(7deg); 
+    transform: rotate(7deg);
+    transform: skew(10deg);
+    -ms-transform: skew(10deg); /* IE 9 */
+    -webkit-transform: skew(10deg); /* Chrome, Safari, Opera */
+    -moz-transform: skew(10deg);
+}
+
+@-webkit-keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+@-moz-keyframes example {
+   	0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+p.transition {
+    width: 100px;
+    height: 100px;
+    background: red;
+    -webkit-transition: width 2s, height 4s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s, height 4s;
+}
+
+p:hover {
+    width: 300px;
+    height: 300px;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(/Test.ttf);
+}
+
+a.extfont {
+    font-family: myFirstFont;
+}

@@ -1,0 +1,134 @@
+
+body
+{
+  font-family: Verdana;
+  font-size: 20px;
+  background: grey;
+  color: white;
+  background-image: url("/img/backgroundimage2.png");
+  background-repeat: repeat-x,
+                       repeat-y;
+  background-attachment: fixed;
+  background-position: center;
+  background-origin: content-box; 
+  margin: 30px;
+  width: 1200px;
+  border: 5px solid blue;
+  padding: 70px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+a:active {
+    background-color: yellow;
+}
+
+a:link {
+    color: white;
+}
+
+/*odwiedzony link*/
+a:visited {
+    color: blue;
+}
+/*link po najechaniu kursorem*/
+
+
+
+@media screen and (max-width: 800px) {
+    body {
+        background-color: -moz-hsla(120, 100%, 50%, 0.3);
+        background-color: -webkit-hsla(120, 100%, 50%, 0.3);
+        background-color: hsla(120, 100%, 50%, 0.3);
+
+    }
+}
+
+
+
+#content
+{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+nav.navbar .a {
+    color: #333;
+    text-decoration: none !important;
+}
+nav.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #f8f8f8;
+    width: 1000px;
+    display: inline-block;
+}
+
+nav.navbar ul li {
+    display: block;
+    position: relative;
+    float: left;
+    background: #f8f8f8;
+}
+
+nav.navbar li ul { display: none; width: 200px;}
+
+nav.navbar ul li a {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #333;
+}
+
+nav.navbar ul li a:hover { background: #f8f8f8; }
+
+nav.navbar li:hover > ul {
+    display: block;
+    position: absolute;
+}
+
+nav.navbar li:hover li { float: none; }
+
+nav.navbar li:hover a { background: #f8f8f8; }
+
+nav.navbar li:hover li a:hover { background: #f8f8f8; }
+
+nav.navbar .main-navigation li ul li { border-top: 0; }
+
+nav.navbar ul ul ul {
+    left: 100%;
+    top: 0;
+}
+
+nav.navbar ul:before,
+nav.navbar ul:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+nav.navbar ul:after { clear: both; }
+
+ul.navbar-nav {
+    width: auto !important;
+}
+
+
+/*
+
+@media only screen and (max-width: 500px) {
+    .gridmenu {
+        width:100%;
+    }
+
+    .gridmain {
+        width:100%;
+    }
+
+    .gridright {
+        width:100%;
+    }
+}

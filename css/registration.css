@@ -1,0 +1,26 @@
+body
+{
+   height: 900px;
+ 
+}
+
+input:checked {
+    height: 50px;
+    width: 50px;
+}
+
+input[type=text]:enabled {
+    background: #cce7ff;
+}
+
+input[type=text]:disabled {
+    background: grey;
+}
+
+input:focus {
+    background-color: yellow;
+}
+input:required {
+    background-color: pink;
+}
+
